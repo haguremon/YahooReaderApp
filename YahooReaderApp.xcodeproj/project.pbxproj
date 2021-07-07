@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		CF3C8F1D2695726F0048CD86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3C8F1C2695726F0048CD86 /* AppDelegate.swift */; };
 		CF3C8F1F2695726F0048CD86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3C8F1E2695726F0048CD86 /* SceneDelegate.swift */; };
-		CF3C8F212695726F0048CD86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3C8F202695726F0048CD86 /* ViewController.swift */; };
 		CF3C8F242695726F0048CD86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3C8F222695726F0048CD86 /* Main.storyboard */; };
 		CF3C8F26269572730048CD86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3C8F25269572730048CD86 /* Assets.xcassets */; };
 		CF3C8F29269572730048CD86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3C8F27269572730048CD86 /* LaunchScreen.storyboard */; };
+		CF3C8F31269572C90048CD86 /* YahooTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3C8F30269572C90048CD86 /* YahooTableViewController.swift */; };
+		CF3C8F33269573080048CD86 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3C8F32269573080048CD86 /* Items.swift */; };
+		CF3C8F37269584E30048CD86 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF3C8F36269584E30048CD86 /* WebKit.framework */; };
+		CF3C8F39269585DA0048CD86 /* YahooWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3C8F38269585DA0048CD86 /* YahooWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF3C8F192695726F0048CD86 /* YahooReaderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YahooReaderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF3C8F1C2695726F0048CD86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF3C8F1E2695726F0048CD86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF3C8F202695726F0048CD86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF3C8F232695726F0048CD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF3C8F25269572730048CD86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF3C8F28269572730048CD86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF3C8F2A269572730048CD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3C8F30269572C90048CD86 /* YahooTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooTableViewController.swift; sourceTree = "<group>"; };
+		CF3C8F32269573080048CD86 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		CF3C8F36269584E30048CD86 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CF3C8F38269585DA0048CD86 /* YahooWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YahooWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3C8F37269584E30048CD86 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				CF3C8F1B2695726F0048CD86 /* YahooReaderApp */,
 				CF3C8F1A2695726F0048CD86 /* Products */,
+				CF3C8F35269584E20048CD86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +66,23 @@
 			children = (
 				CF3C8F1C2695726F0048CD86 /* AppDelegate.swift */,
 				CF3C8F1E2695726F0048CD86 /* SceneDelegate.swift */,
-				CF3C8F202695726F0048CD86 /* ViewController.swift */,
+				CF3C8F30269572C90048CD86 /* YahooTableViewController.swift */,
+				CF3C8F38269585DA0048CD86 /* YahooWebViewController.swift */,
+				CF3C8F32269573080048CD86 /* Items.swift */,
 				CF3C8F222695726F0048CD86 /* Main.storyboard */,
 				CF3C8F25269572730048CD86 /* Assets.xcassets */,
 				CF3C8F27269572730048CD86 /* LaunchScreen.storyboard */,
 				CF3C8F2A269572730048CD86 /* Info.plist */,
 			);
 			path = YahooReaderApp;
+			sourceTree = "<group>";
+		};
+		CF3C8F35269584E20048CD86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF3C8F36269584E30048CD86 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF3C8F212695726F0048CD86 /* ViewController.swift in Sources */,
+				CF3C8F39269585DA0048CD86 /* YahooWebViewController.swift in Sources */,
+				CF3C8F33269573080048CD86 /* Items.swift in Sources */,
 				CF3C8F1D2695726F0048CD86 /* AppDelegate.swift in Sources */,
 				CF3C8F1F2695726F0048CD86 /* SceneDelegate.swift in Sources */,
+				CF3C8F31269572C90048CD86 /* YahooTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cow.iwaski.YahooReaderApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = cow.iwaski.YahooReaderApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
